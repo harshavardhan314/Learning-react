@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <Card name="Harsha Vardhan" stack="MERN"/>
-      
+      <Card name="sriram" stack="JAVA"/>
     </>
   );
 }
