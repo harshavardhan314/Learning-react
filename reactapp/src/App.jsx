@@ -3,7 +3,8 @@ import Card from './card.jsx';
 function App() {
   return (
     <>
-      <Card/>
+      <Card name="Harsha Vardhan" stack="MERN"/>
+      <Card name="sriram" stack="JAVA"/>
     </>
   );
 }
