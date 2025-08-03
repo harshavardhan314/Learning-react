@@ -5,6 +5,7 @@ function App() {
     <>
       <Card name="Harsha Vardhan" stack="MERN"/>
       <Card name="sriram" stack="JAVA"/>
+      <Card name="satya" stack="JAVA"/>
     </>
   );
 }
