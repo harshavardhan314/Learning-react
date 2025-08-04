@@ -2,6 +2,7 @@
 function Card(props)
 {
     return(
+        props.islogin ?
         <div className="content">
             <img src="img.png" alt="" />
             <h1>{props.name}</h1>
@@ -11,6 +12,10 @@ function Card(props)
             </p>
 
         </div>
+        :
+        <p>hello</p>
+    
+                
     );
 
 }
