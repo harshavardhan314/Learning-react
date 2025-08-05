@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     
-          <List/>
+          <List items={arr}/>
     </>
   );
 }
