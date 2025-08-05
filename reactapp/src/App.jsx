@@ -1,9 +1,9 @@
-import Card from './card.jsx';
+import List from './List.jsx'
 
 function App() {
   return (
     <>
-      <Card  islogin={true}/>
+          <List/>
     </>
   );
 }
