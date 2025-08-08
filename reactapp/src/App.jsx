@@ -1,14 +1,15 @@
-import List from './List.jsx'
+// App.jsx
+import List from './List';
 
 function App() {
+  const data = [
+    { id: 1, name: "apple", calories: 30 },
+    { id: 2, name: "pineapple", calories: 40 },
+    { id: 3, name: "banana", calories: 50 },
+  ];
 
-
-  const arr=[{name:"apple" ,id:1,calories:100},{name:"pineapple",id:2,calories:40},{name:"banana",id:3,calories:50}]
   return (
-    <>
-    
-          <List items={arr}/>
-    </>
+   <List items={data}></List>
   );
 }
 
