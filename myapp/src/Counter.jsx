@@ -10,7 +10,7 @@ function Counter() {
     const Increase = () => {
         setCount(count=>count + 1);
         setCount(count=>count + 1);
-        setCount(count=>count + 1);
+       
     };
 
     const Reset = () => {
