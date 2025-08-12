@@ -6,7 +6,7 @@ function Counter() {
     const Decrease = () => {
         setCount(count - 1);
         setCount(count - 1);
-        setCount(count - 1); 
+      
     };
 
     const Increase = () => {
