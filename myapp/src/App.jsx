@@ -1,16 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Counter from './Counter'
-import Mycomponent from './Mycomponent'
-import ColorPicker from './ColorPicker'
+import FirstComponent from './FirstComponent'
+import New from './New'
+
+
+
+
+
+const car={
+  brand: "Toyota",
+  model: "Corolla", 
+  year: 2020,
+}
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <Counter></Counter>
-    
+   <div className="app">
+      <FirstComponent car={car}/>
+      <New></New>
+   </div>
   )
 }
 
