@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 const Counter = () => {
   const [state, setState] = useState(0);
+const number = 10;
+
 
   const increase = () => {
     setState(state + 1);
