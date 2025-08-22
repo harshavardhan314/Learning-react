@@ -3,19 +3,7 @@ import React, { useState } from 'react';
 const Counter = () => {
   const [state, setState] = useState(0);
 const number = 10;
-xx
 
-  const increase = () => {
-    setState(state + 1);
-  };
-
-  const reset = () => {
-    setState(0);
-  };
-
-  const decrease = () => {
-    setState(state - 1);
-  };
 
   return (
     <div className="container">
