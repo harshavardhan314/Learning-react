@@ -6,7 +6,10 @@ import Array from "./Array"
 function App() {
 
   return (
-    <Counter></Counter>
+    <>
+    <Array></Array>
+    </>
+
   );
 }
 
