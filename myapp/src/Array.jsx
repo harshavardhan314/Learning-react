@@ -2,12 +2,19 @@
 
 function Array()
 {
-    const arr=[1,2,{name:"sachin"}];
-    return <div>
-        <h1>Array Component</h1>
+    const arr=[
         {
-            arr.map((item)=><h2>{JSON.stringify(item)}</h2>)
-        }   
-    </div>
+            id:1,
+            name:"Harsha",
+            age:23,
+            city:"New York",
+            skills:["HTML","CSS","JS"]
+        }
+    ];
+    return(
+        <h1>
+            hii
+        </h1>
+    )
 }
 export default Array;
