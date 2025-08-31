@@ -15,7 +15,7 @@ function Array() {
             return(
               <div className="user">
                 <h1> user id:{item.id}</h1>
-              
+                <h1> user name:{item.name}</h1>
                 <h1> user username:{item.username}</h1>
                 <h1> user email:{item.email}</h1>
                 <h1> user address:{item.address.street}</h1>
