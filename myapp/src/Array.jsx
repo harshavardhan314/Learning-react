@@ -1,5 +1,8 @@
+import React from "react";
+import {user} from "./data";
+import "./style.css"
 function Array() {
-
+  console.log(user);
 
 
 
@@ -10,7 +13,7 @@ function Array() {
         {
           user.map((item)=>{
             return(
-              <div>
+              <div className="user">
                 <h1> user id:{item.id}</h1>
                 <h1> user name:{item.name}</h1>
                 <h1> user username:{item.username}</h1>

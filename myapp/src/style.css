@@ -1,0 +1,14 @@
+.user
+{
+    
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgba(0, 0, 255, 0.312);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgb(168, 185, 185);
+    padding: 10px;
+    width: 800px;
+    background-color: rgb(179, 212, 212);
+    text-align: center;
+}

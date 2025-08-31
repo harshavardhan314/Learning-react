@@ -2,6 +2,7 @@ import React from "react"
 import Counter from "./Counter"   
 import Form from "./Form"
 import Array from "./Array"
+import Temp from "./Temp"
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
     <Array></Array>
     <Counter></Counter>
+    <Temp></Temp>
     </>
 
   );
