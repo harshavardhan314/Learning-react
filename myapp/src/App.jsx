@@ -8,6 +8,7 @@ function App() {
   return (
     <>
     <Array></Array>
+    <Counter></Counter>
     </>
 
   );

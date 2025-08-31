@@ -1,25 +1,30 @@
+function Array() {
 
 
-function Array()
-{
 
-    const fruits = ["Apple", "Banana", "Mango", "Orange",
-        {
-            name: "Grapes",
-            color: "Purple",
-            taste: "Sweet"
-        }
-    ];
 
   return (
     <div>
-      <h1>Fruit List</h1>
-      <ul>
+      <h1>User details...</h1>
+      <div>
         {
-            fruits.map((item)=>)
+          user.map((item)=>{
+            return(
+              <div>
+                <h1> user id:{item.id}</h1>
+                <h1> user name:{item.name}</h1>
+                <h1> user username:{item.username}</h1>
+                <h1> user email:{item.email}</h1>
+                <h1> user address:{item.address.street}</h1>
+                <h1>user geo:{item.address.geo.lat}</h1>
+
+                </div>
+            )
+          })
         }
-      </ul>
+      </div>
     </div>
   );
 }
+
 export default Array;
