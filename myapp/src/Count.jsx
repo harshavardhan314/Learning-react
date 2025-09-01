@@ -10,7 +10,7 @@ function Count() {
       <p>Count: {count}</p>
       <button onClick={() => setCount(count + 1)}>Increase</button>
 
-      <p>Name: {name}</p>
+    
       <button onClick={() => setName("New Name")}>Change Name</button>
 
       {isVisible && <p>This is visible!</p>}
