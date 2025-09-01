@@ -5,9 +5,10 @@ import Array from "./Array";
 import Temp from "./Temp";
 import Fetch from "./Fetch";
 import Count from "./Count";
-import FirstPage from './Router/FirstPage';
-import SecondPage from './Router/SecondPage';
-import ThirdPage from './Router/ThirdPage';
+import FirstPage from './Router/Firstpage';
+import SecondPage from './Router/Secondpage';
+import ThirdPage from './Router/Thirdpage';
+
 import { Route, Routes } from "react-router-dom";
 
 function App() {
