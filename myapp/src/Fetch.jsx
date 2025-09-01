@@ -5,9 +5,6 @@ const url="https://jsonplaceholder.typicode.com/users"
 function Fetch()
 {
 
-   
-
-    
     const [user,setUser]=useState([])
     const [loading,setLoading]=useState(true)
     const [error,setError]=useState(null)
