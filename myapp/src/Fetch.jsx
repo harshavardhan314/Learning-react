@@ -3,56 +3,47 @@ import React, { useState, useEffect } from "react";
 const url = "https://jsonplaceholder.typicode.com/users";
 
 function Fetch() {
-  const [user, setUser] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
-  const userHandle = async () => {
-    try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error("Failed to fetch data");
-      }
-      const newData = await response.json();
-      setUser(newData);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
+    // intital values of a state variable
+    const [users,setUsers]=useState([])
+    const [isLoading,setIsLoading]=useState(true)
+    const [isError,setIsError]=useState(false)
+
+    const UserHandle =async()=>{
+        try{
+            const response=await fetch(url)
+            const data=await response.json()
+            console.log(data)
+            setUsers(data)
+            setIsLoading(false)
+            setIsError(false)
+        }
+        catch(error)
+        {
+            setIsLoading(false)
+            setIsError(true)
+        }
+
+
     }
-  };
 
-  useEffect(() => {
-    userHandle();
-  }, []);
+    return (
+        <div>
+            <h2>Fetch Component</h2>
+            {isLoading && <h3>Loading...</h3>}
+            {isError && alert("Error Occured")}
+            {users && users.map((item)=>{
+                <div>
+                    <h3>item.name</h3>
 
-  return (
-    <div>
-      <h2>Users</h2>
+                </div>
+            })}
 
-      {loading && <div>Loading...</div>}
+        </div>
+    )
 
-      {!loading && error && <div style={{ color: "red" }}>{error}</div>}
 
-      {!loading &&
-        !error &&
-        user.map((item) => (
-          <div
-            key={item.id}
-            style={{
-              border: "1px solid gray",
-              margin: "10px",
-              padding: "10px",
-            }}
-          >
-            <h3>User ID: {item.id}</h3>
-            <p>Name: {item.name}</p>
-            <p>Email: {item.email}</p>
-            <p>Username: {item.username}</p>
-          </div>
-        ))}
-    </div>
-  );
 }
+  
 
 export default Fetch;
