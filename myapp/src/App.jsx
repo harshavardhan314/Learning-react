@@ -7,19 +7,27 @@ import Fetch from "./Fetch";
 import Count from "./Count";
 import FirstPage from './Router/Firstpage';
 import SecondPage from './Router/Secondpage';
-import ThirdPage from './Router/Thirdpage';
-
+import ThirdPage from './Router/Thirdpage'
+import FourthPage from './Router/Fourthpage';
+import Navbar from "./Navbar";
+import "./style.css"
 import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path="/first" element={<FirstPage />} />
-        <Route path="/second" element={<SecondPage />} />
-        <Route path="/third" element={<ThirdPage />} />
-      </Routes>
-    </div>
+    <>
+      <div>
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/first" element={<FirstPage />} />
+          <Route path="/second" element={<SecondPage />} />
+          <Route path="/third" element={<ThirdPage />} />
+          <Route path="/fourth" element={<FourthPage />} />
+        </Routes>
+      </div>
+      
+    </>
+   
   );
 }
 

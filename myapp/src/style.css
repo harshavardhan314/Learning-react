@@ -1,14 +1,28 @@
-.user
-{
-    
-    margin-top: 20px;
-    font-size: 30px;
-    color: rgba(0, 0, 255, 0.312);
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 0 0 12px rgb(168, 185, 185);
-    padding: 10px;
-    width: 800px;
-    background-color: rgb(179, 212, 212);
-    text-align: center;
+.navbar {
+  background-color: #848181;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: white;             /* removes blue color */
+  text-decoration: none;    /* removes underline */
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: yellow;            /* optional hover effect */
 }
