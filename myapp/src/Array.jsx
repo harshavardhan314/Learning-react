@@ -8,7 +8,7 @@ function Array() {
 
   return (
     <div>
-      <h1>User details...</h1>
+      
       <div>
         {
           user.map((item)=>{
