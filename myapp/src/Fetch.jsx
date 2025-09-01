@@ -1,6 +1,6 @@
 import React,{useState,useEffect, use} from "react";    
 
-const url="https://jsonplaceholder.typicode.com/posts"
+const url="https://jsonplaceholder.typicode.com/users"
 
 function Fetch()
 {
@@ -9,7 +9,9 @@ function Fetch()
 
     
     const [user,setUser]=useState([])
-    async function userHandle(){
+    const [loading,setLoading]=useState(true)
+    const [error,setError]=useState(null)
+    const userHandle=async()=>{
         const response=await fetch(url);
         const newData=await response.json();
         setUser(newData);
@@ -17,7 +19,12 @@ function Fetch()
     useEffect(()=>{userHandle();},[])
     return(
         <div>Fetch
+
+            {loading && <div>Loading...</div>}
+
             {
+                user &&
+
                 user.map((item)=>{
                     return(
                         <div>
@@ -28,6 +35,8 @@ function Fetch()
                     )
                 })
             }
+
+            
         </div>
 
     )
