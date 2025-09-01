@@ -26,18 +26,25 @@ function Fetch() {
 
 
     }
+    useEffect(()=>{
+        UserHandle()
+    },[])
+        UserHandle()
+    
+    
 
     return (
         <div>
             <h2>Fetch Component</h2>
             {isLoading && <h3>Loading...</h3>}
             {isError && alert("Error Occured")}
-            {users && users.map((item)=>{
-                <div>
-                    <h3>item.name</h3>
-
-                </div>
-            })}
+            {users && users.map((item)=>(
+                
+                    <div key={item.id}>
+                        <h4>{item.name}</h4>
+                    </div>
+                
+            ))}
 
         </div>
     )
