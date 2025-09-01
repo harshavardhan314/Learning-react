@@ -2,7 +2,7 @@ import React from "react";
 import {user} from "./data";
 import "./style.css"
 function Array() {
-  console.log(user);
+  
 
 
 
