@@ -31,9 +31,6 @@ function App() {
 
         <div className="grid">
           <Bang />
-          <Delhi />
-          <Hyb />
-          <Vizag />
         </div>
       </div>
       

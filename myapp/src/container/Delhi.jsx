@@ -1,8 +1,11 @@
+import Hyb from "./Hyd"
 
 const Delhi=()=>{
 
     return(
-        <div>Delhi</div>)
+        <div>Delhi
+            <Hyb></Hyb>
+        </div>)
 
 }
 export default Delhi
